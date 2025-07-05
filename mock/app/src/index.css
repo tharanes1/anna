@@ -1,0 +1,190 @@
+
+
+#offcanvasNavbar {
+  width: 200px ; 
+  height: 100vh;
+}
+.navbar{
+  background: rgba(255, 255, 255, 0); /* translucent white */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); 
+  /* the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  transition: all 0.3s ease-in-out;
+  max-height: 80px;
+}
+.page-content {
+  padding-top: 70px; /* adjust depending on navbar height */
+  min-height: 100vh;
+}
+
+.wes{
+  animation: gradient 15s ease infinite;
+  background:linear-gradient(-45deg,rgb(118, 227, 247),rgb(105, 53, 250),rgb(253, 165, 180),rgb(250, 114, 114));
+  background-size: 400% 400%;
+}
+@keyframes gradient {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+.res{
+  max-width: 600px;
+  /* border: 1px solid black; */
+}
+.tes{
+  margin-left: 40px;
+  font-family: "Sevillana", cursive;
+  font-size: 100px;
+  color: aliceblue;
+  text-align:start;
+  margin-top: 40px;
+}
+.tes1{
+  margin-left: 40px;
+  margin-top: 60px;
+  font-family: "Sevillana", cursive;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+}
+.tes2 img{
+  margin-top: 100px;
+  max-width: 500px;
+}
+.yes3 img{
+  margin-top: 70px;
+  max-width: 400px;
+}
+.yes{
+  background-color: rgb(255, 255, 255);
+}
+.yes1{
+     font-family: "UnifrakturMaguntia", cursive;
+     margin-top: 50px;
+     font-size: 65px;
+}
+.yes2{
+   font-family: "UnifrakturMaguntia", cursive;
+   font-size: 30px;
+}
+.row{
+  margin-top: 40px;
+  height: 100vh;
+}
+.ues{
+  background-color: hsla(0, 23%, 97%, 0);
+
+}
+.ues1 p{
+  font-weight:590;
+  font-size: 70px;
+  font-family: "Fuggles", cursive;
+}
+.ues1 ul{ 
+  text-align: center;
+  font-size: 40px;
+  font-family: "Fuggles", cursive;
+}
+.me-2{
+  width:40px ;
+}
+ .ies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+ }
+.ies img{
+  /* justify-content: center; */
+  max-width: 200px;
+}
+.ies1 img{
+  max-width:250px;
+}
+ /* .ies2{
+ 
+  display: flex;
+  flex-direction: column;
+  gap:0;
+  align-items: center;
+} */
+.ies3{
+  font-family: "Fontdiner Swanky", serif;
+}
+.cursor {
+  animation: blink 0.7s infinite;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0 }
+}
+.ies4:hover{
+  transform: translateY(-20px);
+}
+
+
+
+
+
+.card{
+  width: 300px;
+  height: 435px;
+  text-align: center;
+  /* box-shadow: 5px 5px wheat; */
+}
+.card img{
+  width: 300px;
+  height:fit-content;
+}
+.card_description{
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+    background-color: hsla(0, 9%, 7%, 0.795); /* or any color you prefer */
+  backface-visibility: hidden; /* prevent flipping issues */
+  /* color: rgba(255, 255, 255, 0.342); ensures content stays readable */
+
+  transform: rotateX(-90deg);
+  transform-origin:bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  background: rgba(255, 255, 255, 0); /* translucent white */
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px); /* the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.card:hover{
+  box-shadow: 5px 5px rgba(255, 255, 255, 0);
+}
+.card:hover img{
+  opacity: 0.5;
+  box-shadow:none;
+}
+.card:hover .card_description{
+  transform: rotateX(0deg);
+}
+.title{
+  color: rgba(255, 91, 99, 0.808);
+  font-size: 40px;
+  font-weight: bold;
+}
+.page1{
+    padding-top: 70px; /* adjust depending on navbar height */
+  max-height: 120vh;
+  overflow-y: scroll
+}
